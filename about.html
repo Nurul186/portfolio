@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nhb | About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lora:ital,wght@0,400;1,400&family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Lora', serif;
+            background-color: #eae7e1;
+            color: #2b2b2b;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        nav .logo { 
+            font-size: 2.2rem; 
+            color: #333333; 
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        nav .nav-links { display: flex; gap: 30px; list-style: none; }
+        nav .nav-links a {
+            text-decoration: none;
+            color: #444444;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        nav .nav-links a:hover, nav .nav-links a.active {
+            color: #333333;
+            border-bottom: 2px solid #333333;
+        }
+        .main-content { max-width: 1300px; margin: 0 auto; padding: 60px 40px; flex-grow: 1; width: 100%; }
+        h1.page-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 2px;
+            margin-bottom: 60px;
+        }
+        .profile-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr 1.2fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .profile-photo-wrapper { display: flex; justify-content: center; }
+        .profile-photo { width: 100%; max-width: 340px; aspect-ratio: 1/1; border-radius: 50%; object-fit: cover; }
+        .profile-facts { list-style-type: none; }
+        .profile-facts li {
+            font-size: 1.25rem;
+            line-height: 1;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .profile-facts li::before { content: "•"; position: absolute; left: 0; font-size: 1.4rem; }
+        .profile-bio { font-size: 1.25rem; line-height: 1.7; text-align: justify; padding-left: 10px; }
+        footer {
+            background-color: #e5e3dd;
+            color: #4a4a4a;
+            text-align: center;
+            padding: 25px 20px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 992px) {
+            .profile-layout { grid-template-columns: 1fr; gap: 40px; }
+            .profile-bio { text-align: center; padding-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo"><i class="fa-solid fa-earth-asia"></i></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="interest.html">Interest</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">HELLO, MY NAME IS NURUL HAFIZA</h1>
+        <div class="profile-layout">
+            <div class="profile-photo-wrapper">
+                <img src="fiza1.jpg" alt="Nurul Hafiza Profile Picture" class="profile-photo">
+            </div>
+            <ul class="profile-facts">
+                <li><strong>Human Resource Executive</strong>, UiTM</li>
+                <li><strong>Eldest child</strong> and <strong>only daughter</strong> among four siblings.</li>
+                <li>Date of birth : <strong>June 18, 1985</strong></li>
+                <li>Place of birth : <strong>Butterworth, Penang</strong></li>
+            </ul>
+            <div class="profile-bio">
+                <p>I’m a dedicated and curious professional who loves learning and solving problems. I bring a positive attitude, strong work ethic, and attention to detail to everything I do. Outside of work, I like reading, staying active, travelling and spending time with friends and family.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; NH2026 Last Update: MAY26 | Best Viewed: Google Chrome | Best Display: Any with max-width:600px</p>
+    </footer>
+
+</body>
+</html>
