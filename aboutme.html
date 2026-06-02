@@ -1,66 +1,159 @@
-<div class="student-profile-card" style="max-width: 800px; margin: 40px auto; background-color: #ffffff; border: 1px solid rgba(0,0,0,0.1); border-radius: 16px; padding: 40px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); font-family: 'Lora', serif; color: #2b2b2b;">
-    
-    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #eae7e1; padding-bottom: 20px; margin-bottom: 30px;">
-        <h2 style="font-family: 'Cinzel', serif; font-size: 1.8rem; font-weight: 500; color: #333333; margin: 0;">MY PERSONAL DETAILS</h2>
-        <i class="fa-solid fa-gemini" style="font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Solid' !important; font-weight: 900; color: #6a82ab; font-size: 1.8rem;"></i>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Personal Details</title>
+    <style>
+        /* Base document setup */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eae7e1; /* Matches portfolio background */
+            color: #2b2b2b;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-    <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+        /* Profile card structure */
+        .profile-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #333333;
+            border-bottom: 2px solid #eae7e1;
+            padding-bottom: 12px;
+        }
+
+        /* Image profile styling */
+        .image-box {
+            width: 180px;
+            height: 220px;
+            margin: 0 auto 25px auto;
+            border: 3px solid #eae7e1;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f7f6f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Information data rows */
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eae7e1;
+            font-size: 1.05rem;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #666666;
+        }
+
+        .value {
+            color: #2b2b2b;
+            text-align: right;
+        }
+
+        /* Custom link styling */
+        .value a {
+            color: #d1987e; /* Terracotta accent note */
+            text-decoration: none;
+            border-bottom: 1px dashed #d1987e;
+        }
         
-        <div style="flex: 1; min-width: 240px; text-align: center;">
-            <div style="width: 220px; height: 260px; margin: 0 auto; border-radius: 12px; overflow: hidden; border: 3px solid #eae7e1; box-shadow: 0 4px 10px rgba(0,0,0,0.05); background-color: #f7f6f3; display: flex; align-items: center; justify-content: center;">
-                <img src="uitm-profile.jpg" alt="Nurul Hafiza Profile Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\"fa-solid fa-user-graduate\" style=\"font-size: 4rem; color: #6a82ab;\"></i><br><span style=\"font-size: 0.85rem; color: #777; font-family:\'Quicksand\'; display:block; margin-top:10px;\"></span>
-            </div>
+        .value a:hover {
+            color: #b57c63;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <h1>MY PERSONAL DETAILS</h1>
+        
+        <div class="image-box">
+            <img src="uitm-profile.jpg" alt="Nurul Hafiza Profile Image" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color:#777777; font-size:0.9rem; padding:10px;\'>Image Missing<br>(Check path/extension)</div>';">
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Title:</span>
+            <span class="value">Personal Portfolio Website</span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Name:</span>
+            <span class="value">Nurul Hafiza Binti Busra</span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Student ID:</span>
+            <span class="value">2025554535</span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Group:</span>
+            <span class="value">NCIMBSF3A</span>
         </div>
 
-        <div style="flex: 1.5; min-width: 300px;">
-            <table style="width: 100%; border-collapse: collapse; font-size: 1.1rem; line-height: 1.6;">
-                <tbody>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777; width: 40%;">Title:</td>
-                        <td style="padding: 10px 0; font-weight: 500; color: #2b2b2b;">Personal Portfolio Website</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Name:</td>
-                        <td style="padding: 10px 0; font-weight: 500; color: #2b2b2b;">Nurul Hafiza Binti Busra</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Student ID:</td>
-                        <td style="padding: 10px 0; font-weight: 500; color: #2b2b2b;">2025554535</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Group:</td>
-                        <td style="padding: 10px 0; font-weight: 500; color: #2b2b2b;">NCIMBSF3A</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Course Code:</td>
-                        <td style="padding: 10px 0; font-weight: 500; color: #2b2b2b;">IMS458</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Course Name:</td>
-                        <td style="padding: 10px 0; color: #2b2b2b;">Web Design & Development</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Program Code & Mode:</td>
-                        <td style="padding: 10px 0; color: #2b2b2b;">CDIM262 - Bachelor of Information Science (Hons.) Information Systems Management (e-PJJ) 
-                    </tr>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Faculty:</td>
-                        <td style="padding: 10px 0; color: #2b2b2b;">Faculty of Information Sciences, UiTM Puncak Perdana Campus</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #eae7e1;">
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Submission Date:</td>
-                        <td style="padding: 10px 0; color: #2b2b2b;">June 2, 2026</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px 0; font-family: 'Quicksand', sans-serif; font-weight: 600; color: #777777;">Published URL:</td>
-                        <td style="padding: 10px 0;">
-                            <a href="https://nurul186.github.io/portfolio/" target="_blank" style="color: #2b2b2b; font-family: 'Quicksand', sans-serif; font-weight: 600; text-decoration: none; border-bottom: 1px dashed #d1987e;">nurul186.github.io<i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 2px;"></i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="info-row">
+            <span class="label">Course Code:</span>
+            <span class="value">IMS458</span>
         </div>
 
+        <div class="info-row">
+            <span class="label">Course Name:</span>
+            <span class="value">Web Design & Development</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Program Code & Mode:</span>
+            <span class="value">CDIM262 - Bachelor of Information Science (Hons.) Information Systems Management (e-PJJ)</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Faculty:</span>
+            <span class="value">Faculty of Information Sciences, UiTM Puncak Perdana Campus</span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Submission Date:</span>
+            <span class="value">June 2, 2026</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Published URL:</span>
+            <span class="value">
+                <a href="https://nurul186.github.io/portfolio/" target="_blank">nurul186.github.io</a>
+            </span>
+        </div>
     </div>
-</div>
+
+</body>
+</html>
